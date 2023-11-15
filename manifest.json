@@ -1,0 +1,13 @@
+{
+  "name": "Skip Intro",
+  "description": "Automatically clicks the 'skip intro' button on Netflix",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.netflix.com/watch/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
